@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-xxl">
+              <a class="navbar-brand" href="#">PrivateFinance</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Ввод операций</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">План бюджета</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Накопления</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Графики,отчеты</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                    <a class="nav-link" href="#">Вход</a>
+                    <a class="nav-link" href="#">Регистрация</a>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div class="container-xxl">
+              <div class="row">
+                  <div class="col-8">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="expense-tab" data-bs-toggle="tab" data-bs-target="#expense" type="button" role="tab" aria-controls="expense" aria-selected="true">Расход</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="income-tab" data-bs-toggle="tab" data-bs-target="#income" type="button" role="tab" aria-controls="income" aria-selected="false">Доход</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="transaction-tab" data-bs-toggle="tab" data-bs-target="#transaction" type="button" role="tab" aria-controls="transaction" aria-selected="false">Перевод</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="expense" role="tabpanel" aria-labelledby="expense-tab">
+                <h1>Внести Расход</h1>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <span class="input-group-text">0.00</span>
+                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                  </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Выберите категорию</option>
+                    <option value="1">Продукты</option>
+                    <option value="2">Медицина</option>
+                    <option value="3">Развлечения</option>
+                    <option value="4">Другое</option>
+                  </select>
+                  <button type="button" class="btn btn-primary btn-sm">Подтвердить</button>
+            </div>
+            <div class="tab-pane fade show active" id="income" role="tabpanel" aria-labelledby="income-tab">
+                <h1>Внести Доход</h1>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <span class="input-group-text">0.00</span>
+                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                  </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Выберите категорию</option>
+                    <option value="1">Продукты</option>
+                    <option value="2">Медицина</option>
+                    <option value="3">Развлечения</option>
+                    <option value="4">Другое</option>
+                  </select>
+                  <button type="button" class="btn btn-primary btn-sm">Подтвердить</button>
+            </div>
+            <div class="tab-pane fade show active" id="transaction" role="tabpanel" aria-labelledby="transaction-tab">
+                
+            </div>
+           </div>   
+          </div>
+          <div class="col-4"></div>
+          </div>
+        </div>
+    </header>
+    <footer class="text-center text-white fixed-bottom" style="background-color: #000000;">
+       
+        <div class="container p-4"></div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="#">PrivateFinance.com</a>
+        </div>
+
+      </footer>
+</body>
+</html>
